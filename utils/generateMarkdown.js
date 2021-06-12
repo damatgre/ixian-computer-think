@@ -36,7 +36,7 @@ function generateMarkdown(answers) {
   ## Usage
   ${answers.usage}
 
-  ## Contributing
+  ## Credits
   ${answers.contributing}
 
   ## Tests
@@ -49,7 +49,10 @@ function generateMarkdown(answers) {
 
   ## License
   This application is covered by the ${answers.license} license. 
-  
+
+  ## Contributing
+  ${answers.contributing}
+
   `;
 
 }

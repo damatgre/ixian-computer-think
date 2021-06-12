@@ -39,7 +39,7 @@ const questions = () => {
         {
             type: "input",
             name: "usage",
-            message: "What is the projects usage?",
+            message: "What is the project's usage?",
         },
         //license figure out how to run through generateMarkdown
         {
@@ -55,6 +55,12 @@ const questions = () => {
                 "Mozilla",
                 "Open"
             ]
+        },
+        //credits
+        {
+            type: "input",
+            name: "credits",
+            message: "List any tutorials, "
         },
         //contributors
         {
