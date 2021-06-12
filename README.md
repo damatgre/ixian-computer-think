@@ -1,9 +1,10 @@
 
-  <h1 align="center">Greg</h1>
+  #README Generator
     
  
   ## Description
-  Greg
+  This project was created to allow users to generate a simplified README through various inputs.
+
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -17,24 +18,23 @@
   undefined
 
   ## Usage
-  Greg
+  No idea.
 
-  ## License
-
-  This application is covered by the MIT license. 
-  ## Contributing
-  Greg
+  ## Credits
+  Me
 
   ## Tests
-  Greg
+  no clue
 
   ## Questions
-  Greg
+  Email me with any questions: gregdamato2@gmail.com
   
+  Find me on GitHub: [damatgre](https://github.com/damatgre)
 
-  Find me on GitHub: [undefined](https://github.com/undefined)
+  ## License
+  This application is covered by the MIT license. 
+
+  ## Contributing
+  Me
+
   
-
-  Email me with any questions: undefined<br /><br />
- 
-      

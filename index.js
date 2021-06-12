@@ -1,6 +1,4 @@
-// TODO: Include packages needed for this application
-//require inquirer
-//require generateMarkdown
+//required files and connections
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -96,18 +94,6 @@ const questions = () => {
             validate: function (answer) {
                 if (answer.length < 1) {
                     return console.log("You must enter your username.");
-                }
-                return true;
-            },
-        },
-        //email
-        {
-            type: "input",
-            name: "email",
-            message: "What is your contact email? (Required)",
-            validate: function (answer) {
-                if (answer.length < 1) {
-                    return console.log("You must enter an email for users.");
                 }
                 return true;
             },
