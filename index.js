@@ -60,7 +60,7 @@ const questions = () => {
         {
             type: "input",
             name: "credits",
-            message: "List any tutorials, "
+            message: "List any tutorials, repo links, etc. you used for this project."
         },
         //contributors
         {
