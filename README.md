@@ -1,9 +1,9 @@
 
-  #Greg
+  # README Generator
     
  
   ## Description
-  Greg
+  This project will allow a user to put all the necessary information into an automatically generated README file.
 
   ## Table of Contents
   - [Description](#description)
@@ -18,23 +18,23 @@
   undefined
 
   ## Usage
-  Greg
+  After installing the project, type node index into your terminal. 
 
   ## Credits
-  Greg
+  N/a
 
   ## Tests
-  Greg
+  N/A
 
   ## Questions
-  Email me with any questions: Greg
+  Email me with any questions: gregdamato2@gmail.com
   
-  Find me on GitHub: [Greg](https://github.com/Greg)
+  Find me on GitHub: [damatgre](https://github.com/damatgre)
 
   ## License
-  [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+  [![License: Open](https://img.shields.io/badge/license-Open-blue.svg)](http://opensource.org/licenses/Open)
 
   ## Contributing
-  Greg
+  N/a
 
   

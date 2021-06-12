@@ -19,7 +19,7 @@ function generateMarkdown(answers) {
   - [Questions](#questions)
 
   ## Installation
-  ${answers.installation}
+  ${answers.install}
 
   ## Usage
   ${answers.usage}
