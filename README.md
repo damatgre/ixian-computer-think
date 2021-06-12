@@ -18,7 +18,7 @@
   undefined
 
   ## Usage
-  gre
+  greg
 
   ## Credits
   greg
@@ -32,7 +32,7 @@
   Find me on GitHub: [greg](https://github.com/greg)
 
   ## License
-  [!License[MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
+  [!License[MIT(https://img.shields.io/static/v1?label=License&message=MIT&color=green)]
   
   This application is covered by the MIT license. 
 
