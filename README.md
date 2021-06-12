@@ -21,20 +21,20 @@
   Greg
 
   ## Credits
-  greg
+  Greg
 
   ## Tests
-  greg
+  Greg
 
   ## Questions
-  Email me with any questions: greg
+  Email me with any questions: Greg
   
-  Find me on GitHub: [greg](https://github.com/greg)
+  Find me on GitHub: [Greg](https://github.com/Greg)
 
   ## License
-  [![License: MIT](https://img.shields.io/badge/license-MIT-red.img)](http://MIT.org/)
+  [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
 
   ## Contributing
-  greg
+  Greg
 
   
