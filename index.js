@@ -41,18 +41,28 @@ const questions = () => {
         },
         //license figure out how to run through generateMarkdown
         {
-            type: "list",
+            type: "checkbox",
             name: "license",
             message: "Chose the appropriate license for this project: ",
-            choices: [
-                "Apache",
-                "Academic",
-                "GNU",
-                "ISC",
-                "MIT",
-                "Mozilla",
-                "Open"
-            ]
+            choices: ["ISC", "MIT", "Mozilla", "Open"],
+            validate: function (answer) {
+                if (answer.length < 1) {
+                  return console.log("You must enter the license of your project.");
+                }
+                return true;
+              },
+        },
+        {
+            type: "checkbox",
+            name: "color",
+            message: "Chose the color for your license badge.",
+            choices: ["red", "blue", "green", "Open"],
+            validate: function (answer) {
+                if (answer.length < 1) {
+                  return console.log("You must choose a button color.");
+                }
+                return true;
+              },
         },
         //credits
         {
