@@ -3,7 +3,7 @@
     
  
   ## Description
-  gregg
+  Greg
 
   ## Table of Contents
   - [Description](#description)
@@ -18,7 +18,7 @@
   undefined
 
   ## Usage
-  greg
+  Greg
 
   ## Credits
   greg
@@ -32,7 +32,7 @@
   Find me on GitHub: [greg](https://github.com/greg)
 
   ## License
-  [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](http://MIT.org/)
+  [![License: MIT](https://img.shields.io/badge/license-MIT-red.img)](http://MIT.org/)
 
   ## Contributing
   greg
