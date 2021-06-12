@@ -39,7 +39,7 @@ const questions = () => {
             name: "usage",
             message: "What is the project's usage?",
         },
-        //license figure out how to run through generateMarkdown
+        //generate licenses
         {
             type: "checkbox",
             name: "license",
@@ -52,11 +52,12 @@ const questions = () => {
                 return true;
               },
         },
+        //generate color for badge
         {
             type: "checkbox",
             name: "color",
             message: "Chose the color for your license badge.",
-            choices: ["red", "blue", "green", "Open"],
+            choices: ["red", "blue", "green", "yellow"],
             validate: function (answer) {
                 if (answer.length < 1) {
                   return console.log("You must choose a button color.");

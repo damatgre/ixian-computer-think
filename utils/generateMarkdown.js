@@ -1,3 +1,5 @@
+//eliminated the need for other functions by creating questions and requiring a license
+
 //function to generate markdown for README
 function generateMarkdown(answers) {
   return `
