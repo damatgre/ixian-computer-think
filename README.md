@@ -1,9 +1,9 @@
 
-  #Greg
+  #greg
     
  
   ## Description
-  Greg
+  greg
 
   ## Table of Contents
   - [Description](#description)
@@ -18,24 +18,25 @@
   undefined
 
   ## Usage
-  Greg
+  gre
 
   ## Credits
-  Greg
+  greg
 
   ## Tests
-  Greg
+  greg
 
   ## Questions
-  Email me with any questions: Greg
+  Email me with any questions: greg
   
-  Find me on GitHub: [Greg](https://github.com/Greg)
+  Find me on GitHub: [greg](https://github.com/greg)
 
   ## License
-  https://img.shields.io/static/v1?label=License&message=MIT&color=red
+  [!License[MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
+  
   This application is covered by the MIT license. 
 
   ## Contributing
-  Greg
+  greg
 
   
