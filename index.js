@@ -113,7 +113,7 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fileName = `${answers.title}-README.md`;
+    fileName = `README.md`;
     //populates the read me file
     fs.writeFile(fileName, data, (err) => {
         //if error
@@ -136,7 +136,7 @@ async function init() {
         console.log(markdownFile);
 
         // Write new README.md to dist directory
-        writeToFile('./dist/README.md', markdownFile);
+        writeToFile('./README.md', markdownFile);
         console.log('Successfully wrote to README.md');
     } catch (err) {
         console.log(err);
