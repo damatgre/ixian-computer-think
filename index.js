@@ -41,7 +41,7 @@ const questions = () => {
             name: "usage",
             message: "What is the projects usage?",
         },
-        //license choice
+        //license figure out how to run through generateMarkdown
         {
             type: "list",
             name: "license",
@@ -82,11 +82,11 @@ const questions = () => {
                 }
             }
         },
-        //github username
+        //github username for questions
         {
             type: "input",
             name: "credits",
-            message: "What is your Github username?",
+            message: "What is your Github username? (Required)",
             validate: function (answer) {
                 if (answer.length < 1) {
                     return console.log("You must enter your username.");
@@ -94,11 +94,11 @@ const questions = () => {
                 return true;
             },
         },
-        //link to github figure out placement. 
+        //link to github for questions
         {
             type: 'input',
             name: 'link',
-            message: 'Enter the GitHub link to your repository. (Required)',
+            message: 'Enter the GitHub link to your project. (Required)',
             validate: linkInput => {
                 if (linkInput) {
                     return true;
