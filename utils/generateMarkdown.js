@@ -15,11 +15,12 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   return `
-  <h1 align="center">${answers.title}</h1>
+  #${answers.title}
     
  
   ## Description
   ${answers.description}
+
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -35,9 +36,6 @@ function generateMarkdown(answers) {
   ## Usage
   ${answers.usage}
 
-  ## License
-
-  This application is covered by the ${answers.license} license. 
   ## Contributing
   ${answers.contributing}
 
@@ -45,15 +43,15 @@ function generateMarkdown(answers) {
   ${answers.tests}
 
   ## Questions
-  ${answers.questions}<br />
-  <br />
+  Email me with any questions: ${answers.questions}
+  
+  Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
 
-  Find me on GitHub: [${answers.username}](https://github.com/${answers.username})<br />
-  <br />
+  ## License
+  This application is covered by the ${answers.license} license. 
+  
+  `;
 
-  Email me with any questions: ${answers.email}<br /><br />
- 
-      `;
 }
 
 module.exports = generateMarkdown;

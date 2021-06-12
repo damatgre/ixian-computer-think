@@ -85,11 +85,23 @@ const questions = () => {
         //github username for questions
         {
             type: "input",
-            name: "credits",
+            name: "username",
             message: "What is your Github username? (Required)",
             validate: function (answer) {
                 if (answer.length < 1) {
                     return console.log("You must enter your username.");
+                }
+                return true;
+            },
+        },
+        //email
+        {
+            type: "input",
+            name: "email",
+            message: "What is your contact email? (Required)",
+            validate: function (answer) {
+                if (answer.length < 1) {
+                    return console.log("You must enter an email for users.");
                 }
                 return true;
             },
@@ -113,7 +125,7 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fileName = `README.md`;
+    fileName = 'README.md';
     //populates the read me file
     fs.writeFile(fileName, data, (err) => {
         //if error
@@ -135,8 +147,8 @@ async function init() {
         const markdownFile = await generateMarkdown(answers);
         console.log(markdownFile);
 
-        // Write new README.md to dist directory
-        writeToFile('./README.md', markdownFile);
+        // Write README.md from starter
+        await writeToFile('./README.md', markdownFile);
         console.log('Successfully wrote to README.md');
     } catch (err) {
         console.log(err);
