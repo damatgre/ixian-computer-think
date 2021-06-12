@@ -13,12 +13,28 @@ const questions = () => {
             type: "input",
             name: "title",
             message: "What is the title of your project?",
+            validate: projInput => {
+                if (projInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter a project name!');
+                    return false;
+                }
+            }
         },
         //description / input
         {
             type: "input",
             name: "description",
             message: "Give a brief description of the project.",
+            validate: projDesc => {
+                if (projDesc) {
+                    return true;
+                } else {
+                    console.log('Tell use about your project.');
+                    return false;
+                }
+            }
         },
         //installation / input
         {
@@ -63,13 +79,21 @@ const questions = () => {
         {
             type: "input",
             name: "questions",
-            message: "How should any users direct their questions?",
+            message: "List email for user questions.",
+            validate: projEmail => {
+                if (projEmail) {
+                    return true;
+                } else {
+                    console.log('Please list an email for user questions.');
+                    return false;
+                }
+            }
         },
-        //github username
+        //github username for questions
         {
             type: "input",
             name: "credits",
-            message: "What is your Github username?",
+            message: "What is your Github username? (Required)",
             validate: function (answer) {
                 if (answer.length < 1) {
                     return console.log("You must enter your username.");
@@ -77,7 +101,7 @@ const questions = () => {
                 return true;
             },
         },
-        //link to github figure out placement. 
+        //link to github for questions
         {
             type: 'input',
             name: 'link',
@@ -91,17 +115,24 @@ const questions = () => {
                 }
             }
         }
-    ]);
+    ])
 };
 
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fileName = "generated-README.md";
+
+}
 
 // TODO: Create a function to initialize app
 function init() {
     //ask questions (activity 2 from monday)
     //call generateMarkdown function which will return a string
     //call writeToFile function pass to it a file name and the string returned by the generateMarkdown function
+    const answers = readmeData;
+
+
 }
 
 // Function call to initialize app
