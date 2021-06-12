@@ -34,9 +34,7 @@ function generateMarkdown(answers) {
   Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
 
   ## License
-  [!License[${answers.license}(https://img.shields.io/static/v1?label=License&message=${answers.license}&color=${answers.color}.svg)]
-  
-  This application is covered by the ${answers.license} license. 
+  [![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-${answers.color}.img)](http://${answers.license}.org/)
 
   ## Contributing
   ${answers.contributing}
