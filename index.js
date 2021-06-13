@@ -43,7 +43,7 @@ const questions = () => {
         {
             type: "checkbox",
             name: "license",
-            message: "Chose the appropriate license for this project: ",
+            message: "Choose the appropriate license for this project: ",
             choices: ["ISC", "MIT", "Mozilla", "Open"],
             validate: function (answer) {
                 if (answer.length < 1) {
@@ -123,7 +123,7 @@ const questions = () => {
                 }
             }
         }
-    ]);
+    ]).then(answers => writeToFile('./README.md', generateMarkdown(answers))) ;
 };
 
 // TODO: Create a function to write README file
@@ -141,21 +141,23 @@ function writeToFile(fileName, data) {
 };
 
 //init function with async
-async function init() {
-    try {
-        //catch and store responses
-        const answers = await questions();
-        console.log(answers);
-        //pass responses to markdown function
-        const markdownFile = await generateMarkdown(answers);
-        console.log(markdownFile);
+// async function init() {
+//     try {
+//         //catch and store responses
+//         const answers = await questions();
+//         console.log(answers);
+//         //pass responses to markdown function
+//         const markdownFile = generateMarkdown(answers);
+//         console.log(markdownFile);
 
-        // Write README.md from starter
-        await writeToFile('./README.md', markdownFile);
-        console.log('Successfully wrote to README.md');
-    } catch (err) {
-        console.log(err);
-    }
-}
+//         // Write README.md from starter
+//         writeToFile('./README.md', markdownFile);
+//         console.log('Successfully wrote to README.md');
+//     } catch (err) {
+//         console.log(err);
+//     }
+// }
 
-init();
+// init();
+
+questions();

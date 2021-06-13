@@ -39,7 +39,7 @@ function generateMarkdown(answers) {
   [![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-${answers.color}.svg)](http://opensource.org/licenses/${answers.license})
 
   ## Contributing
-  ${answers.contributing}
+  ${answers.contributing} 
 
   `;
 
