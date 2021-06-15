@@ -4,7 +4,8 @@
 function generateMarkdown(answers) {
   return `
   # ${answers.title}
-    
+  
+  [![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-${answers.color}.svg)](http://opensource.org/licenses/${answers.license})
  
   ## Description
   ${answers.description}
@@ -36,7 +37,7 @@ function generateMarkdown(answers) {
   Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
 
   ## License
-  [![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-${answers.color}.svg)](http://opensource.org/licenses/${answers.license})
+  Click this link for more information regarding [${answers.license}](http://opensource.org/licenses/${answers.license}).
 
   ## Contributing
   ${answers.contributing} 
